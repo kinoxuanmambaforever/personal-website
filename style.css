@@ -128,7 +128,10 @@ img {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url('../images/hero-bg.png');
+  /* When deploying to GitHub Pages, all assets live in the repository root.
+     Therefore the hero background is referenced relative to the CSS file rather than
+     nested inside an `images` folder. */
+  background-image: url('hero-bg.png');
   background-size: cover;
   background-position: center;
   display: flex;
